@@ -48,7 +48,7 @@ jobs:
         with:
           context: .
           push: true
-          visibility: public
+          outputs: type=image,push=true,visibility=public
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
       
